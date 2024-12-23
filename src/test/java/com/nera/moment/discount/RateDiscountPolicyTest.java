@@ -1,15 +1,22 @@
 package com.nera.moment.discount;
 
 import org.assertj.core.api.Assertions;
-
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.nera.moment.AppConfig;
 import com.nera.moment.member.Grade;
 import com.nera.moment.member.Member;
 
 public class RateDiscountPolicyTest {
-    RateDiscountPolicy discountPolicy = new RateDiscountPolicy();
+    private DiscountPolicy discountPolicy;
+
+    @BeforeEach
+    public void beforeEach() {
+        AppConfig appConfig = new AppConfig();
+        discountPolicy = appConfig.discountPolicy();
+    }
 
     @Test
     @DisplayName("VIP는 10% 할인이 적용되어야 한다")
