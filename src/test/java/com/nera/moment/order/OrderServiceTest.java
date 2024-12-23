@@ -1,18 +1,25 @@
 package com.nera.moment.order;
 
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.nera.moment.AppConfig;
 import com.nera.moment.member.Grade;
 import com.nera.moment.member.Member;
 import com.nera.moment.service.MemberService;
-import com.nera.moment.service.MemberServiceImpl;
 import com.nera.moment.service.OrderService;
-import com.nera.moment.service.OrderServiceImpl;
 
 public class OrderServiceTest {
-    MemberService memberService = new MemberServiceImpl();
-    OrderService orderService = new OrderServiceImpl();
+    MemberService memberService;
+    OrderService orderService;
+
+    @BeforeEach
+    public void beforeEach() {
+        AppConfig appConfig = new AppConfig();
+        memberService = appConfig.memberservice();
+        orderService = appConfig.orderService();
+    }
 
     @Test
     void createOrder() {

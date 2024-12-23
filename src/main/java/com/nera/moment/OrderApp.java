@@ -4,14 +4,13 @@ import com.nera.moment.member.Grade;
 import com.nera.moment.member.Member;
 import com.nera.moment.order.Order;
 import com.nera.moment.service.MemberService;
-import com.nera.moment.service.MemberServiceImpl;
 import com.nera.moment.service.OrderService;
-import com.nera.moment.service.OrderServiceImpl;
 
 public class OrderApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberservice();
+        OrderService orderService = appConfig.orderService();
 
         Long memberId = 1L;
         Member member = new Member(memberId, "nera", Grade.VIP);
