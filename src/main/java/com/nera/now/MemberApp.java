@@ -1,8 +1,8 @@
-package com.nera.moment;
+package com.nera.now;
 
-import com.nera.moment.member.Grade;
-import com.nera.moment.member.Member;
-import com.nera.moment.service.MemberService;
+import com.nera.now.member.Grade;
+import com.nera.now.member.Member;
+import com.nera.now.service.MemberService;
 
 public class MemberApp {
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
-package com.nera.moment.service;
+package com.nera.now.service;
 
-import com.nera.moment.discount.DiscountPolicy;
-import com.nera.moment.member.Member;
-import com.nera.moment.order.Order;
-import com.nera.moment.repository.MemberRepository;
+import com.nera.now.discount.DiscountPolicy;
+import com.nera.now.member.Member;
+import com.nera.now.order.Order;
+import com.nera.now.repository.MemberRepository;
 
 public class OrderServiceImpl implements OrderService {
 

@@ -1,10 +1,10 @@
-package com.nera.moment;
+package com.nera.now;
 
-import com.nera.moment.member.Grade;
-import com.nera.moment.member.Member;
-import com.nera.moment.order.Order;
-import com.nera.moment.service.MemberService;
-import com.nera.moment.service.OrderService;
+import com.nera.now.member.Grade;
+import com.nera.now.member.Member;
+import com.nera.now.order.Order;
+import com.nera.now.service.MemberService;
+import com.nera.now.service.OrderService;
 
 public class OrderApp {
     public static void main(String[] args) {

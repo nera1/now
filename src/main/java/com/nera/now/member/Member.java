@@ -1,4 +1,4 @@
-package com.nera.moment.member;
+package com.nera.now.member;
 
 public class Member {
     private Long id;

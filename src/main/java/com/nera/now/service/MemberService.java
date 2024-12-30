@@ -1,6 +1,6 @@
-package com.nera.moment.service;
+package com.nera.now.service;
 
-import com.nera.moment.member.Member;
+import com.nera.now.member.Member;
 
 public interface MemberService {
     void join(Member member);

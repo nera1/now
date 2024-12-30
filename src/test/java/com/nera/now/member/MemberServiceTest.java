@@ -1,11 +1,13 @@
-package com.nera.moment.member;
+package com.nera.now.member;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.nera.moment.AppConfig;
-import com.nera.moment.service.MemberService;
+import com.nera.now.AppConfig;
+import com.nera.now.member.Grade;
+import com.nera.now.member.Member;
+import com.nera.now.service.MemberService;
 
 public class MemberServiceTest {
 

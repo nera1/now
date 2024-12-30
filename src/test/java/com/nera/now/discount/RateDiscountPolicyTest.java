@@ -1,13 +1,14 @@
-package com.nera.moment.discount;
+package com.nera.now.discount;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import com.nera.moment.AppConfig;
-import com.nera.moment.member.Grade;
-import com.nera.moment.member.Member;
+import com.nera.now.AppConfig;
+import com.nera.now.discount.DiscountPolicy;
+import com.nera.now.member.Grade;
+import com.nera.now.member.Member;
 
 public class RateDiscountPolicyTest {
     private DiscountPolicy discountPolicy;

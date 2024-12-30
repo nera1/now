@@ -1,14 +1,15 @@
-package com.nera.moment.order;
+package com.nera.now.order;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.nera.moment.AppConfig;
-import com.nera.moment.member.Grade;
-import com.nera.moment.member.Member;
-import com.nera.moment.service.MemberService;
-import com.nera.moment.service.OrderService;
+import com.nera.now.AppConfig;
+import com.nera.now.member.Grade;
+import com.nera.now.member.Member;
+import com.nera.now.order.Order;
+import com.nera.now.service.MemberService;
+import com.nera.now.service.OrderService;
 
 public class OrderServiceTest {
     MemberService memberService;

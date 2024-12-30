@@ -1,6 +1,6 @@
-package com.nera.moment.repository;
+package com.nera.now.repository;
 
-import com.nera.moment.member.Member;
+import com.nera.now.member.Member;
 
 public interface MemberRepository {
     void save(Member member);

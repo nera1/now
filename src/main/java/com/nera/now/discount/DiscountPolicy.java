@@ -1,6 +1,6 @@
-package com.nera.moment.discount;
+package com.nera.now.discount;
 
-import com.nera.moment.member.Member;
+import com.nera.now.member.Member;
 
 public interface DiscountPolicy {
     public int discount(Member member, int price);

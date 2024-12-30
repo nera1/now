@@ -1,6 +1,6 @@
-package com.nera.moment.service;
+package com.nera.now.service;
 
-import com.nera.moment.order.Order;
+import com.nera.now.order.Order;
 
 public interface OrderService {
     Order createOrder(Long memberId, String itemName, int itemPrice);

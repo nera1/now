@@ -1,9 +1,9 @@
-package com.nera.moment.repository;
+package com.nera.now.repository;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.nera.moment.member.Member;
+import com.nera.now.member.Member;
 
 public class MemoryMemberRepository implements MemberRepository {
 

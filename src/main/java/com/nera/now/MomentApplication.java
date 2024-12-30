@@ -1,4 +1,4 @@
-package com.nera.moment;
+package com.nera.now;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

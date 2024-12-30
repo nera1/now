@@ -1,7 +1,7 @@
-package com.nera.moment.discount;
+package com.nera.now.discount;
 
-import com.nera.moment.member.Grade;
-import com.nera.moment.member.Member;
+import com.nera.now.member.Grade;
+import com.nera.now.member.Member;
 
 public class FixDiscountPolicy implements DiscountPolicy {
 

@@ -1,4 +1,4 @@
-package com.nera.moment.order;
+package com.nera.now.order;
 
 public class Order {
     private long memberId;
