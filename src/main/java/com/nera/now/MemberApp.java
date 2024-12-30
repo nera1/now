@@ -8,7 +8,7 @@ public class MemberApp {
     public static void main(String[] args) {
         AppConfig appConfig = new AppConfig();
         MemberService memberService = appConfig.memberservice();
-        Member member = new Member(1L, "엄인용", Grade.VIP);
+        Member member = new Member(1L, "nera", Grade.VIP);
         memberService.join(member);
 
         Member findMember = memberService.findMember(1L);
