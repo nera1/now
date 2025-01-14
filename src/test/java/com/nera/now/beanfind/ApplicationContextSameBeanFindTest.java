@@ -1,8 +1,8 @@
 package com.nera.now.beanfind;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import java.lang.reflect.Member;
 import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
