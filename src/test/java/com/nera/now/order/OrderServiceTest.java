@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import com.nera.now.AppConfig;
 import com.nera.now.member.Grade;
 import com.nera.now.member.Member;
-import com.nera.now.order.Order;
 import com.nera.now.service.MemberService;
 import com.nera.now.service.OrderService;
 
