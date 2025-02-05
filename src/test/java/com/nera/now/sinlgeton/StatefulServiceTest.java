@@ -20,7 +20,6 @@ public class StatefulServiceTest {
         System.out.println(price2);
     }
 
-    @Configuration
     static class TestConfig {
         @Bean
         StatefulService statefulService() {
