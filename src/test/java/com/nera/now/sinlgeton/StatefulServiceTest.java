@@ -1,5 +1,6 @@
 package com.nera.now.sinlgeton;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -26,16 +27,13 @@ public class StatefulServiceTest {
     @Test
     void ConfigAnnotationTest() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(TestConfig.class);
-        StatefulService s1 = ac.getBean("statefulService", StatefulService.class);
-        StatefulService s2 = ac.getBean("statefulService", StatefulService.class);
-        System.out.println(s1);
-        System.out.println(s2);
+        StatefulService service1 = ac.getBean("statefulService", StatefulService.class);
+        StatefulService service2 = ac.getBean("statefulService", StatefulService.class);
 
-        ApplicationContext ac2 = new AnnotationConfigApplicationContext(AppConfig.class);
-        MemberRepository m1 = ac2.getBean("memberRepository", MemberRepository.class);
-        MemberRepository m2 = ac2.getBean("memberRepository", MemberRepository.class);
-        System.out.println(m1);
-        System.out.println(m2);
+        System.out.println(service1);
+        System.out.println(service2);
+
+        Assertions.assertThat(service1).isSameAs(service2);
     }
 
     static class TestConfig {
