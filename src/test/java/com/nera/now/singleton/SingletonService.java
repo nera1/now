@@ -1,4 +1,4 @@
-package com.nera.now.sinlgeton;
+package com.nera.now.singleton;
 
 public class SingletonService {
     private static final SingletonService instance = new SingletonService();

@@ -1,4 +1,4 @@
-package com.nera.now.sinlgeton;
+package com.nera.now.singleton;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +14,7 @@ public class StatefulServiceTest {
         System.out.println(bean);
     }
 
+    @Configuration
     static class TestConfig {
         @Bean
         StatefulService statefulService() {

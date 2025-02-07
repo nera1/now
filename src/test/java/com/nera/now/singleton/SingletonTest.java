@@ -1,4 +1,4 @@
-package com.nera.now.sinlgeton;
+package com.nera.now.singleton;
 
 import java.lang.reflect.Member;
 
