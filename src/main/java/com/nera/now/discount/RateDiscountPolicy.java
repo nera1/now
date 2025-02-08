@@ -1,8 +1,11 @@
 package com.nera.now.discount;
 
+import org.springframework.stereotype.Component;
+
 import com.nera.now.member.Grade;
 import com.nera.now.member.Member;
 
+@Component
 public class RateDiscountPolicy implements DiscountPolicy {
 
     private int discountPercent = 10;

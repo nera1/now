@@ -12,6 +12,7 @@ import com.nera.now.service.MemberServiceImpl;
 import com.nera.now.service.OrderService;
 import com.nera.now.service.OrderServiceImpl;
 
+@Configuration
 public class AppConfig {
 
     @Bean
